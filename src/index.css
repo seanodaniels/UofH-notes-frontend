@@ -1,12 +1,27 @@
+body {
+  color: #ddd;
+  background-color: #222;
+}
+
 h1 {
   color: green;
   font-style: italic;
 }
 
 .note {
-  color: gray;
+  color: #ddd;
   padding-top: 3px;
   font-size: 15px;
+}
+
+button {
+  background-color: #666;
+  border-color: #999;
+}
+
+input {
+  background-color: #999;
+  border-color: #666;
 }
 
 .error {
