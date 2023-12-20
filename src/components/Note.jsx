@@ -4,8 +4,8 @@ const Note = ({ note, toggleImportance }) => {
 
   return (
     <li className='note'>
-      {note.content} 
-      <button onClick={toggleImportance}>{label}</button>
+      <span className="note-content">{note.content}</span> 
+      <button className="importance-toggle" onClick={toggleImportance}>{label}</button>
     </li>
   )
 }

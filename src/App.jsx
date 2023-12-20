@@ -99,7 +99,7 @@ const App = () => {
     return (
       <div>
         <div style={showLoginButton}>
-          <button onClick={() => setLoginVisible(true)}>log in</button>
+          <button id="show-login" onClick={() => setLoginVisible(true)}>log in</button>
         </div>
         <div style={showLoginForm}>
           <LoginForm
@@ -119,7 +119,7 @@ const App = () => {
   const noteFormRef = useRef()
 
   const noteForm = () => (
-    <Togglable buttonLabel="new note" ref={noteFormRef}>
+    <Togglable buttonLabel="create new note" ref={noteFormRef}>
       <NoteForm
         createNote={addNote}
       />
